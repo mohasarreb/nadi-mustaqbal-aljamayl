@@ -1,0 +1,157 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title> نادي المستقبل </title> 
+    <link rel="icon" href="نادي المستقبل 2.jpg" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <link rel="stylesheet" href="prog.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head> 
+<body> 
+    <p></p>
+   
+    <div class="main-content"> 
+        <nav class="navbar"> 
+            <div class="r-button">
+                <button class="report-button">
+                    <span class="icon">?</span>
+                </button>
+            </div>
+            <div class="button">
+                <form action="/search" method="get" class="search-box">
+                    <input type="text" name="query" placeholder="أدخل نص للبحث">
+                <button  type="submit">البحث</button>
+                
+            </form>
+              </div>
+              <div class="logo"> 
+                <img src="نادي المستقبل 2.jpg" alt="نادي المستقبل"> 
+            </div> 
+           
+            <button class="menu-btn" onclick="toggleMenu()"> 
+             
+                <div class="menu-icon"> 
+                    <div class="bar bar1"></div> 
+                <div class="bar bar3"></div> 
+            </div> 
+            <div class="close-icon">  
+                <div class="line line1"></div>  
+                <div class="line line2"></div>  
+            </div> 
+        </button> 
+                <ul class="list"> 
+                    <li class="nav-itm"><a href="pg2.html">قائمة اللاعبين</a></li>
+                    <li class="nav-itm"><a href="po4.html">أخبارنا</a></li> 
+                    <li class="nav-itm"><a href="po3.html">عن المستقبل</a></li>  
+                    <li class="nav-itm"><a href="pg.html">رئيسية</a></li>
+                </ul> 
+            </nav> 
+        </div>
+
+        <section class="home">
+            <div class="image-container">
+                <img src="المستقبل.jpg" alt="صورة" class="img-fluid">
+                <div class="text-overlay">
+                    <h1>نادي المستقبل</h1>
+                    <p>يرحب بكم علي صفحته</p>
+                </div>
+            </div>
+    </section>
+    <div class="coniater"><h1>مواعيد المباريات</h1></div>
+    <div class="match">
+            <div class="team-logo">
+                <img src="نادي المستقبل 2.jpg" alt="شعار الفريق" >
+                <p class="home-team">الفريق الاول</p>
+            </div>
+            <div class="enemy"><p>vs</p></div>
+            <div class="team-logo">
+                <img src="كورة.jpg" alt="شعار فريق" >
+                <p class="away-team">الفريق الخصم</p>
+            </div>
+            <div class="match-details">
+                <span class="match-deta">2024-08-15</span>
+                <span class="match-time">20:00</span>
+            </div>
+        </div>
+        <div class="team-section">
+            <h2>المسوؤلين</h2>
+            <div class="team-container">
+                <div class="team-member">
+                    <img src="رئيس النادي .jpg" alt="Rakib Siddiquee">
+                    <h3>:رئيس النادي</h3>
+                    <p>زهير الوافي</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="مدرب.jpg" alt="Palash Roy">
+                    <h3>:مدرب </h3>
+                    <p>فوزي العكاري</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="مساعد المدرب.jpg" alt="Himolata">
+                    <h3>:مساعد المدرب</h3>
+                    <p>أشرف الكوني </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="mode">
+        <div class="container">
+            <div class="player-info">
+                <h1 id="player-name">موسى سو</h1>
+                <p id="player-position">الهجوم</p>
+            </div>
+            <div class="player-image">
+                <img id="player-image" src="موسى سو.jpg" alt="Player Image">
+            </div>
+            <div class="arrows">
+                <span class="arrow-left" onclick="prevPlayer()">&#8592;</span>
+                <span class="arrow-right" onclick="nextPlayer()">&#8594;</span>
+            </div>
+        </div>
+    </section> 
+   
+    <!-- يمكنك تكرار هذه البطاقات لأخبار أخرى -->
+    <footer class="footer">
+        <p class="map-al">موقعنا علي الخريطه</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.4845313911783!2d12.049158876027217!3d32.858897329799944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13abdfde5da38401%3A0x62e9393f9cc2549a!2z2YbYp9iv2Yog2KfZhNmF2LPYqtmC2KjZhNiMINin2YTYrNmF2YrZhA!5e0!3m2!1sar!2sly!4v1724768350705!5m2!1sar!2sly"
+         width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="contact">
+            <button class="email-button">تواصل معنا عبر البريد الإلكتروني</button>
+        </div>
+        
+        <div class="social-icons">
+            
+            <p>تابع نشاطاتنا على:</p>
+            <a href="https://www.facebook.com/almostgbel?mibextid=LQQJ4d" class="fab fa-facebook"></a>
+            
+        </div>
+
+        <div class="footer-info">
+            <p>جميع الحقوق محفوظة © لذا نادي المستقبل الجميل</p>
+            <p> م.محمد مصطفى سرب</p>
+        </div>
+    </footer>
+</section>
+
+<script src="pgg.js"></script>
+</body> 
+    </html>

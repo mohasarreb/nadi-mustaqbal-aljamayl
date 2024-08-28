@@ -1,0 +1,509 @@
+body {    margin: 0;    font-family: Arial, Helvetica, sans-serif;}
+.navbar {    background-color: rgb(0, 0, 0);    display: flex;
+    align-items: center;    justify-content: space-between;    padding: 10px;    position: relative;
+    flex-wrap: wrap; height: 70px; /* يسمح للعنصر بالتفاف عند الحاجة */
+} 
+
+.button{
+
+    text-align: center;
+    width: 150px;
+    height: 30px;
+}
+.report-button {
+    background-color: #d4d6d8;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: rgb(7, 7, 7);
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.report-button:hover {
+    background-color: #0056b3;
+}
+
+.icon {
+    font-size: 16px;
+}
+.search-box {
+    display: flex;
+    justify-content: center;
+}
+.search-box input[type="text"] {
+    padding: 0;
+    font-size: 12px;
+    border: 1px solid #5f5d5d;
+    border-radius: 4px 0 0 4px;
+    width: 60%;
+    
+}
+.search-box button {
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 0 4px 4px 0;
+    background-color: #535252;
+    color: rgb(255, 254, 254);
+    cursor: pointer;
+}
+.search-box button:hover {
+    background-color: #a0a0a0;
+}
+.navbar .logo img {
+    width: 40px;    height: 50px;   border-radius: 25px ;
+}.menu-btn { 
+    display: none; /* إخفاء الزر في الشاشات الكبيرة */     background: none; 
+    border: none;     cursor: pointer; 
+    position: relative;     z-index: 1001; 
+}
+.menu-icon {     display: flex; 
+    flex-direction: column;     justify-content: center; 
+    align-items: center;     width: 30px; 
+    height: 25px; }
+.bar { 
+    display: block;     width: 30px; 
+    height: 3px;     background-color: #afafaf; /* تغيير اللون إلى الأسود */ 
+    margin: 5px 0;     transition: all 0.3s ease; 
+}
+.menu-btn.active .bar1 {     transform: rotate(45deg); 
+    position: absolute;     top: 10px; 
+    left: 10px; }
+.menu-btn.active .bar2 {  
+    opacity: 0; }
+.menu-btn.active .bar3 {  
+    transform: rotate(-45deg);      position: absolute;  
+    top: 10px;  
+    left: 10px;  }
+
+.list {
+    list-style: none;    display: flex;    
+    }
+    .navbar .nav-itm {
+    padding: 15px 15px;    margin-left: 15px;}
+.navbar .list a {    text-decoration: none;    color: rgb(222, 218, 218);    font-size: 15px;
+}
+.navbar .nav-itm:hover {    background-color: aliceblue;
+    border-radius: 30%;
+}/* تصميم متجاوب للشاشات المتوسطة والصغيرة */
+.navbar .list a:hover{
+    color: black;
+}
+
+section{
+    padding: 5px;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 450px;
+}
+
+.image {
+    width: 100%;
+    max-width: 600px; /* يمكن التحكم بحجم الصورة */
+    height: auto;
+    border-radius: 15px;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* خلفية سوداء شفافة للنص */
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0; /* إخفاء النص في البداية */
+    transition: opacity 4s ease-in-out; /* تأثير التلاشي */
+}
+
+.text-overlay h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.text-overlay p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* عند تحميل الصفحة يتم تفعيل التلاشي */
+.image-container:hover .text-overlay {
+    opacity: 1; /* إظهار النص عند التحريك على الصورة */
+}
+.home img{
+    width: 100%;
+    height: 450px;
+}
+.coniater{
+    font-size: 26px;
+    margin-left: 40%;
+}
+.match {
+    background-color: #4b4b4b;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.team-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    
+}
+
+.team-logo img {
+    width: 80px; /* تغيير الحجم حسب الحاجة */
+    height: auto;
+    border-radius: 50%;
+}
+.enemy{
+    color: #ddd;
+    font-size: 50px;
+}
+.home-team{
+    color: #ddd;
+    font-size: 20px;
+}
+.away-team{
+    color: #ddd;
+    font-size: 20px;
+}
+.match-details {
+    font-size: 1.2em;
+    color: #fffbfb;
+}
+
+.match-date,
+.match-time {
+    display: block;
+}
+
+.team-section {
+    
+    background-color: #292929;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.team-section h2 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.team-member .social-icons a {
+    color: #555;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.team-member .social-icons a:hover {
+    color: #007bff;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+/* styles.css */
+.mode{
+    background-color: #535252;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.player-info {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    text-align: right;
+}
+
+.player-info h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: rgb(0, 0, 0);
+
+    background-color: #d4d6d8;
+    border-radius: 20px;
+}
+
+.player-info p {
+    font-size: 2rem;
+    margin: 0;
+    background-color: #d4d6d8;
+    border-radius: 20px;
+
+}
+
+.player-image img {
+    width: 85%;
+    height: auto;
+    border-radius: 15px;
+    margin-left: 10%;
+}
+
+.arrows {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.arrow-left, .arrow-right {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.arrow-left:hover, .arrow-right:hover {
+    color: #0004ff; /* لون التأثير عند التمرير */
+}
+
+.modne{
+    background-color: #000;
+}
+.moood{
+    color: #ddd;
+    font-size: 35px;
+    margin-left: 35%;
+}
+
+.mood{
+    color: #ddd;
+    margin-left:50px ;
+}
+.image4{
+    width: 50%;
+    height: 50%;
+    margin-left: 20%;
+}
+/* تصميم حاوية الأخبار */
+.news-container {
+    display: flex;
+    justify-content: space-between;  /* توزيع المسافة بين البطاقات */
+    flex-wrap: wrap;                 /* يجعل البطاقات تلتف إلى الصف التالي إذا لم تكن المساحة كافية */
+    padding: 20px;
+    background-color: #e5e5e5;
+    
+}
+
+/* تصميم البطاقة */
+.news-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    margin-bottom: 20px;             /* إضافة مسافة بين البطاقات عموديًا */
+    transition: transform 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-10px);
+}
+
+/* تصميم صورة الخبر */
+.news-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* تفاصيل الخبر */
+.news-details {
+    padding: 15px;
+}
+
+.news-date {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.news-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.news-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* زر قراءة المزيد */
+.news-link {
+    text-decoration: none;
+    color: #1e73be;
+    font-weight: bold;
+}
+
+.news-link:hover {
+    text-decoration: underline;
+}
+.footer {
+    background-color: #d5d5d7;
+    color: #676666;
+    padding: 20px;
+    text-align: center;
+}
+
+.email-button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.email-button:hover {
+    background-color: #a9a8a7;
+}
+
+.social-iconse p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.social-iconse a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    background-color: #424242;
+    border-radius: 50%;
+    position: relative;
+}
+
+.icon {
+    background-size: cover;
+}
+
+.facebook  {
+    background-image: url('facebook-icon.png');
+  
+}
+
+.twitter {
+    background-image: url('twitter-icon.png');
+}
+
+.instagram {
+    background-image: url('instagram-icon.png');
+}
+
+.youtube {
+    background-image: url('youtube-icon.png');
+}
+
+.tiktok {
+    background-image: url('tiktok-icon.png');
+}
+
+
+.footer-info {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #555555;
+}
+
+.footer-info p {
+    margin: 0;
+}
+.map-al{
+    justify-content: center;
+    color: #555;
+    background-color: darkgray;
+    font-size: 35px;
+}
+@media (max-width: 890px) {     .menu-btn {     display: block; /* عرض الزر على الشاشات الصغيرة */ 
+}  
+.list {            display: none; /* إخفاء القائمة على الشاشات الصغيرة */ 
+    flex-direction: column;     width: 100%; 
+    text-align: center;     background-color: rgb(246, 246, 248); 
+    position: absolute;     bottom: 0; /* تحديد الموضع من الأسفل */ 
+    transform: translateY(100%); /* تحريك العنصر إلى أسفل */     right: 0; 
+    z-index: 1000; } 
+.list.active {     display: flex; /* عرض القائمة عند النقر على الزر */ 
+} }@media screen and (max-width: 480px) {    .navbar {
+        justify-content: flex-start;    }    .navbar .logo {
+        margin-right: auto;    }        body {
+            background-color: rgb(253, 254, 255);        }
+        .navbar{            background-color: rgb(123, 123, 124);
+        }        .navbar .list a {
+            color: #000;        }
+        .navbar .nav-itm:hover{            background-color: rgb(0, 0, 0);
+        }    .list a {
+        font-size: 20px; /* تقليل حجم النص لتناسب الشاشات الأصغر */    }
+    .navbar .nav-itm {        padding: 10px 0; /* تقليل التباعد بين العناصر */    }
+    .news-container { justify-content: center;}}
